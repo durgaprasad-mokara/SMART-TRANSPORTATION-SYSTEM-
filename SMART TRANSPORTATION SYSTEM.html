@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/840bbae187.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.digi.com/getattachment/Blog/post/Introduction-to-Smart-Transportation-Benefits/GettyImages-1207768535-1280x720.jpg?lang=en-US" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#wcuSection">
+                        Smart Transportation
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="#exploreMenuSection" id="navItem2">Vehicle Tracking</a>
+                    <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">Route Optimization</a>
+                    <a class="nav-link" href="#followUsSection" id="navItem4">Scheduling</a>
+                    <a class="nav-link" href="#followUsSections" id="navItem5">Real-Time updates</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+        <div class="text-center">
+            <h1 class="banner-heading mb-3"></h1>
+            <p class="banner-caption mb-4"></p>
+
+        </div>
+    </div>
+    <div class="wcu-section pt-5 pb-5" id="wcuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="wcu-section-heading">SMART TRANSPORTATION SYSTEM ?</h1>
+                    <p class="wcu-section-description">
+                        An intelligent transportation system (ITS) is an advanced application that aims to provide innovative services relating to different modes of transport and traffic management and enable users to be better informed and make safer, more coordinated, and 'smarter' use of transport networks.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="data:image/png;base64,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" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Smart Transportation</h1>
+                        <p class="wcu-card-description">
+                            Smart transportation can generally be divided into two broad categories, public infrastructure and the automotive industry. These two sectors become “smart” when networked sensors are integrated into infrastructure and vehicles in an effort to accomplish the goals of remote management and control, safety, and efficiency.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://www.shutterstock.com/shutterstock/photos/1552855895/display_1500/stock-photo-isometric-virtual-abstract-interface-of-intelligent-car-system-and-gps-navigator-on-hanging-screen-1552855895.jpg" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Car System And GPS</h1>
+                        <p class="wcu-card-description">
+                            Isometric virtual abstract interface of Intelligent car system and gps navigator on hanging screen of smartphone above digital map city.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://img.freepik.com/free-vector/intelligent-transportation-system-abstract-concept-vector-illustration-traffic-parking-management-smart-city-technology-road-safety-travel-information-public-transport-abstract-metaphor_335657-1768.jpg?t=st=1723104336~exp=1723107936~hmac=0f85bf41ab589ce04a399b0d9e9ae5e23beacd52dd660e2148b9b57f67edeaf3&w=740" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3"> Public Transport</h1>
+                        <p class="wcu-card-description">
+                            Intelligent transportation system abstract concept vector illustration. Traffic and parking management, smart city technology, road safety, travel information, public transport abstract metaphor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading">VEHICLE TRACKING</h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://s3.amazonaws.com/s3-biz4intellia/images/how-iot-empowers-vehicle-tracking-system.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">VEHICLE TRACKING</h1>
+                        <a href="" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://trackmyvehicle.wordpress.com/wp-content/uploads/2014/10/how-gps-tracking-system-works1.jpg?w=300&h=208" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">GPS Tracking System</h1>
+                        <a class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://www.digi.com/getattachment/Blog/post/Introduction-to-Smart-Transportation-Benefits/Traffic-Isometric-diagram.png?lang=en-US" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Digi’s Smart Transport Solutions</h1>
+                        <a class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/6/KW/OD/RA/152642009/vehicle-tracker-gv20-gps-tracking-device-1000x1000.PNG" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">GPS Tracking Device, For Car, Plastic.</h1>
+                        <a class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://i.pinimg.com/736x/ec/d3/9f/ecd39fe6f27cdc17c925d57f30e754da.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">GPS Vehicle Tracker for Multiple vehicles</h1>
+                        <a class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://www.mokosmart.com/wp-content/uploads/2023/06/%E4%B8%BB-2.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Types of Asset Tracking Technologies</h1>
+                        <a class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://www.digi.com/getattachment/Blog/post/Introduction-to-Smart-Transportation-Benefits/GettyImages-940926146-1280.jpg?lang=en-US" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Smart Transportation Work</h1>
+                        <a class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://www.digi.com/getattachment/Blog/post/Introduction-to-Smart-Transportation-Benefits/GettyImages-1173186166-1280x720.jpg?lang=en-US" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Urban Transportation Technology</h1>
+                        <a class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="healthy-food-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxTW6qGFDM8uKXp8EwuwCGMWYeXG6QOvfgn0grMbWRCVE5YukcmecNr6nuMMdTjxyrDVY&usqp=CAU" class="healthy-food-section-img" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <h1 class="healthy-food-section-heading">
+                        Route Optimization
+                    </h1>
+                    <p class="healthy-food-section-description">
+                        Route optimization determines the best routes for your vehicles, reducing travel time, saving fuel, and increasing efficiency. With supply chains becoming more complex, businesses need a smart tool to navigate these challenges.
+                    </p>
+                    <button class="custom-button">Watch Video</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="delivery-and-payment-section pt-5 pb-5" id="deliveryPaymentSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 order-1 order-md-2">
+                    <div class="text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT48y6bPTB3QdUafuLWkLWu_YPJvaltxt_Byw&s" class="delivery-and-payment-section-img" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 order-2 order-md-1">
+                    <h1 class="delivery-and-payment-section-heading">
+                        Optimizing Public Transport in Smart Cities with Event-Driven Architecture
+                    </h1>
+                    <p class="delivery-and-payment-section-description">
+                        With more and more Internet of Things (IoT) devices entering the market daily, it’s getting easier and easier to capture interesting data from the sensors and control systems involved with running a modern city. Low Energy Bluetooth (LEB) devices, GPS, near-field communication, mobile apps, streaming apps — data comes from everywhere today, and cities are generating data at a rapidly increasing rate. Smart cities use this data to enhance the quality of life for their citizens, and there’s no better example than when you apply a “smart city” mindset to public transportation systems.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thanking-customers-section pt-5 pb-5" id="followUsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                    <h1 class="thanking-customers-section-heading">
+                        Smart Transportation Scheduling.
+                    </h1>
+                    <p class="thanking-customers-section-description">
+
+                    </p>
+                    <div class="">
+                        <img src="https://www.allrideapps.com/wp-content/uploads/2023/05/Transportation_Scheduling_Software.jpg" class="thanking-customers-section-img" />
+                    </div>
+                    <p class="thanking-customers-section-description">
+                        Route scheduling refers to the process of planning and organizing transportation routes to ensure timely delivery of goods or services. It involves deciding on the most efficient order of stops based on multiple factors such as delivery time, distance, traffic conditions, and driver availability.
+                    </p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="thanking-customers-section pt-5 pb-5" id="followUsSections">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                    <h1 class="thanking-customers-section-heading">
+                        Real-Time Updates
+                    </h1>
+                    <p class="thanking-customers-section-description">
+
+                    </p>
+                    <div class="d-md">
+                        <img src="https://www.intertrust.com/wp-content/uploads/2022/03/Blog_Banner_Real-time-data-makes-smart-transportation-a-reality_2280x1200.jpg" class="thanking-customers-section-img" />
+                    </div>
+                    <p class="thanking-customers-section-description">
+                        The world’s population is growing, and it’s becoming increasingly more urban. As such, the challenge of reducing congestion and carbon emissions is significant. One way to accomplish this is by creating smart transportation networks that leverage mass data collection and new, “greener” technologies to get people where they want to go more quickly and sustainably.
+                    </p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="follow-us-section pt-5 pb-5" id="">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <h1 class="follow-us-section-heading">Follow Us</h1>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-twitter icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-instagram icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-facebook icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="https://www.digi.com/getattachment/Blog/post/Introduction-to-Smart-Transportation-Benefits/GettyImages-1207768535-1280x720.jpg?lang=en-US" class="food-munch-logo" />
+                    <h1 class="footer-section-mail-id">smarttransportation@system.com</h1>
+                    <p class="footer-section-address">
+                        Parul University, Vaghodia, Vadodara District, Gujarat, India.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
